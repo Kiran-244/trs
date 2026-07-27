@@ -1,0 +1,1224 @@
+/* ===========================
+   TABLETS
+=========================== */
+
+@media (max-width: 768px) {
+
+    body{
+        padding:20px;
+        overflow:auto;
+    }
+
+    .book{
+
+        width:330px;
+        height:560px;
+
+    }
+
+    .gold-frame{
+
+        inset:14px;
+        padding:24px 20px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+        text-align:center;
+
+    }
+
+    .ornament{
+
+        font-size:22px;
+        margin-bottom:10px;
+
+    }
+
+    .subtitle{
+
+        font-size:22px;
+        margin-bottom:18px;
+
+    }
+
+    h1{
+
+        font-size:36px;
+        line-height:1.18;
+        letter-spacing:2px;
+
+    }
+
+    .divider{
+
+        width:90px;
+        margin:22px auto;
+
+    }
+
+    .written,
+    .for{
+
+        font-size:18px;
+        margin-bottom:4px;
+
+    }
+
+    h3{
+
+        font-size:24px;
+        margin-bottom:18px;
+
+    }
+
+    h4{
+
+        font-size:22px;
+
+    }
+
+    .bottom{
+
+        margin-top:22px;
+
+    }
+
+    .bottom p{
+
+        font-size:18px;
+
+    }
+
+    .bottom span{
+
+        font-size:15px;
+        letter-spacing:2px;
+
+    }
+
+    .instruction{
+
+        margin-top:18px;
+
+    }
+
+    .instruction p{
+
+        font-size:16px;
+
+    }
+
+}
+
+
+/* ===========================
+   SMALL PHONES
+=========================== */
+
+@media (max-width:480px){
+
+    body{
+
+        padding:15px;
+
+    }
+
+    .book{
+
+        width:300px;
+        height:500px;
+
+    }
+
+    .gold-frame{
+
+        inset:12px;
+        padding:18px 16px;
+
+    }
+
+    .ornament{
+
+        font-size:18px;
+        margin-bottom:8px;
+
+    }
+
+    .subtitle{
+
+        font-size:18px;
+        margin-bottom:14px;
+
+    }
+
+    h1{
+
+        font-size:30px;
+        line-height:1.15;
+        letter-spacing:1.5px;
+
+    }
+
+    .divider{
+
+        width:80px;
+        margin:18px auto;
+
+    }
+
+    .written,
+    .for{
+
+        font-size:16px;
+
+    }
+
+    h3{
+
+        font-size:20px;
+        margin-bottom:14px;
+
+    }
+
+    h4{
+
+        font-size:18px;
+
+    }
+    .bottom{
+        display:inline-block;
+    }
+
+    .bottom{
+
+        margin-top:50px;
+
+    }
+
+    .bottom p{
+
+        font-size:15px;
+
+    }
+
+    .bottom span{
+
+        font-size:13px;
+
+    }
+
+    .instruction{
+
+        margin-top:14px;
+
+    }
+
+    .instruction p{
+
+        font-size:14px;
+        text-align:center;
+
+    }
+
+}
+/*=====================================
+TABLETS
+======================================*/
+
+@media (max-width:992px){
+
+    .intro-page{
+
+        width:90vw;
+        height:560px;
+
+    }
+
+    .intro-content{
+
+        padding:45px;
+
+    }
+
+    .greeting{
+
+        font-size:48px;
+
+    }
+
+    .name{
+
+        font-size:24px;
+
+    }
+
+    .teacher-name{
+
+        font-size:32px;
+
+    }
+
+    .intro-line{
+
+        font-size:27px;
+
+        line-height:1.7;
+
+    }
+
+    .continue-btn{
+
+        font-size:22px;
+
+        margin-top:45px;
+
+    }
+
+    .bookmark{
+
+        right:50px;
+        height:85px;
+
+    }
+
+}
+
+
+/*=====================================
+MOBILE
+======================================*/
+
+@media (max-width:768px){
+
+    body{
+
+        padding:20px;
+
+    }
+
+    .intro-page{
+
+        width:100%;
+        height:auto;
+        min-height:90vh;
+
+        border-radius:5px;
+
+    }
+
+    .intro-content{
+
+        padding:70px 30px 70px;
+
+    }
+
+    .ornament{
+
+        font-size:22px;
+
+        margin-bottom:22px;
+
+    }
+
+    .greeting{
+
+        font-size:42px;
+
+        margin-bottom:6px;
+
+    }
+
+    .name{
+
+        font-size:22px;
+
+        margin-bottom:22px;
+
+    }
+
+    .teacher-name{
+
+        font-size:30px;
+
+        margin-bottom:18px;
+
+    }
+
+    .intro-line{
+
+        font-size:22px;
+
+        line-height:1.8;
+
+        margin-bottom:10px;
+
+    }
+
+    .continue-btn{
+
+        font-size:21px;
+
+        margin-top:40px;
+
+    }
+
+    .page-number{
+
+        right:22px;
+        bottom:18px;
+        font-size:16px;
+
+    }
+
+    .bookmark{
+
+        right:30px;
+        width:10px;
+        height:75px;
+
+    }
+
+}
+
+
+/*=====================================
+SMALL PHONES
+======================================*/
+
+@media (max-width:480px){
+
+    body{
+
+        padding:12px;
+
+    }
+
+    .intro-page{
+
+        width:100%;
+        min-height:95vh;
+
+    }
+
+    .intro-content{
+
+        padding:55px 22px 65px;
+
+    }
+
+    .ornament{
+
+        font-size:20px;
+
+        margin-bottom:18px;
+
+    }
+
+    .greeting{
+
+        font-size:36px;
+
+    }
+
+    .name{
+
+        font-size:19px;
+
+    }
+
+    .teacher-name{
+
+        font-size:26px;
+
+    }
+
+    .intro-line{
+
+        font-size:19px;
+
+        line-height:1.75;
+
+        margin-bottom:8px;
+
+    }
+
+    .continue-btn{
+
+        font-size:19px;
+
+        margin-top:34px;
+
+    }
+
+    .bookmark{
+
+        right:22px;
+        width:8px;
+        height:65px;
+
+    }
+
+    .page-number{
+
+        right:18px;
+        bottom:14px;
+        font-size:14px;
+
+    }
+
+}
+
+
+/*=====================================
+VERY SMALL DEVICES
+======================================*/
+
+@media (max-width:360px){
+
+    .greeting{
+
+        font-size:32px;
+
+    }
+
+    .teacher-name{
+
+        font-size:22px;
+
+    }
+
+    .intro-line{
+
+        font-size:17px;
+
+    }
+
+    .continue-btn{
+
+        font-size:17px;
+
+    }
+
+}
+/*=====================================
+CHAPTER PAGE
+======================================*/
+
+.chapter-page{
+
+    position:relative;
+
+    width:min(900px,92vw);
+
+    min-height:92vh;
+
+    margin:40px auto;
+
+    background:#f8f4ec;
+
+    border-radius:6px;
+
+    box-shadow:
+    0 25px 80px rgba(0,0,0,.45),
+    inset 0 0 30px rgba(255,255,255,.45);
+
+    overflow:hidden;
+
+}
+
+
+/*=====================================
+PAPER TEXTURE
+======================================*/
+
+.chapter-page::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(rgba(0,0,0,.025) 1px,transparent 1px);
+
+    background-size:18px 18px;
+
+    opacity:.35;
+
+}
+
+
+/*=====================================
+BOOK SPINE
+======================================*/
+
+.chapter-page::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:18px;
+
+    height:100%;
+
+    background:
+    linear-gradient(to right,
+    rgba(0,0,0,.12),
+    transparent);
+
+}
+
+
+/*=====================================
+BOOKMARK
+======================================*/
+
+.bookmark{
+
+    position:absolute;
+
+    top:0;
+
+    right:60px;
+
+    width:12px;
+
+    height:100px;
+
+    background:#7b1f2f;
+
+    border-radius:0 0 4px 4px;
+
+}
+
+
+/*=====================================
+CONTENT
+======================================*/
+
+.chapter-content{
+
+    padding:80px 90px;
+
+}
+
+
+/*=====================================
+CHAPTER NUMBER
+======================================*/
+
+.chapter-number{
+
+    text-align:center;
+
+    letter-spacing:6px;
+
+    font-size:15px;
+
+    color:#8d7b67;
+
+    margin-bottom:20px;
+
+}
+
+
+/*=====================================
+TITLE
+======================================*/
+
+.chapter-title{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:54px;
+
+    font-weight:600;
+
+    text-align:center;
+
+    color:#33261b;
+
+    margin-bottom:15px;
+
+}
+
+
+/*=====================================
+DATE
+======================================*/
+
+.chapter-date{
+
+    text-align:center;
+
+    font-style:italic;
+
+    color:#8b755d;
+
+    font-size:24px;
+
+    margin-bottom:60px;
+
+}
+
+
+/*=====================================
+STORY
+======================================*/
+
+.story{
+
+    font-size:24px;
+
+    color:#413429;
+
+    line-height:2;
+
+}
+
+
+.story p{
+
+    margin-bottom:30px;
+
+}
+
+
+/*=====================================
+QUOTE
+======================================*/
+
+blockquote{
+
+    border-left:3px solid #caa96c;
+
+    margin:35px 0;
+
+    padding-left:28px;
+
+    font-size:26px;
+
+    font-style:italic;
+
+    color:#604d3f;
+
+}
+
+
+/*=====================================
+ENDING
+======================================*/
+
+.ending{
+
+    margin-top:60px;
+
+    text-align:center;
+
+    font-style:italic;
+
+    font-size:27px;
+
+    color:#5c4a39;
+
+}
+
+
+/*=====================================
+BUTTON
+======================================*/
+
+.continue-btn{
+
+    margin:70px auto 20px;
+
+    display:block;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:24px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#49382b;
+
+    letter-spacing:1px;
+
+    position:relative;
+
+    transition:.35s;
+
+}
+
+
+.continue-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-5px;
+
+    width:0;
+
+    height:1px;
+
+    background:#b38b44;
+
+    transition:.35s;
+
+}
+
+
+.continue-btn:hover{
+
+    color:#b38b44;
+
+}
+
+
+.continue-btn:hover::after{
+
+    width:100%;
+
+}
+
+
+/*=====================================
+PAGE NUMBER
+======================================*/
+
+.page-number{
+
+    position:absolute;
+
+    right:35px;
+
+    bottom:25px;
+
+    color:#8d7b67;
+
+    font-size:18px;
+
+}
+
+
+/*=====================================
+PAGE TURN
+======================================*/
+
+.turn-page{
+
+    transform-origin:left center;
+
+    animation:pageTurn 1.6s ease forwards;
+
+}
+
+@keyframes pageTurn{
+
+    0%{
+
+        transform:
+        perspective(2200px)
+        rotateY(0);
+
+    }
+
+    100%{
+
+        transform:
+        perspective(2200px)
+        rotateY(-180deg);
+
+        opacity:0;
+
+    }
+
+}
+/* ==========================================
+   LARGE TABLETS (1024px)
+========================================== */
+
+@media (max-width:1024px){
+
+.chapter-content{
+
+    width:94%;
+    padding:90px 70px;
+
+}
+
+.hero-title{
+
+    font-size:4rem;
+
+}
+
+.story{
+
+    font-size:1.6rem;
+
+}
+
+blockquote{
+
+    font-size:2.3rem;
+
+}
+
+}
+
+
+/* ==========================================
+   TABLETS (768px)
+========================================== */
+
+@media (max-width:768px){
+
+.chapter-page{
+
+    padding:70px 18px;
+
+    margin-top:-70px;
+
+}
+
+.chapter-content{
+
+    width:100%;
+
+    padding:70px 40px;
+
+    border-radius:20px;
+
+}
+
+.bookmark{
+
+    right:35px;
+
+    width:10px;
+
+    height:90px;
+
+}
+
+.hero-number{
+
+    font-size:.9rem;
+
+    letter-spacing:5px;
+
+}
+
+.hero-title{
+
+    font-size:3.2rem;
+
+    line-height:1.15;
+
+    max-width:95%;
+
+}
+
+.hero-subtitle{
+
+    font-size:1.5rem;
+
+}
+
+.scroll-indicator{
+
+    font-size:.8rem;
+
+}
+
+.chapter-date{
+
+    font-size:2.3rem;
+
+    margin-bottom:60px;
+
+}
+
+.story{
+
+    font-size:1.45rem;
+
+    line-height:1.95;
+
+}
+
+.story p{
+
+    margin-bottom:42px;
+
+}
+
+blockquote{
+
+    font-size:2rem;
+
+    padding:35px;
+
+    margin:55px 0;
+
+}
+
+.ending{
+
+    font-size:2.2rem;
+
+}
+
+.continue-btn{
+
+    font-size:2rem;
+
+}
+
+.page-number{
+
+    right:30px;
+
+    bottom:25px;
+
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.chapter-hero{
+
+    height:100svh;
+
+}
+
+.hero-overlay{
+
+    padding:28px;
+
+}
+
+.hero-number{
+
+    font-size:.82rem;
+
+    letter-spacing:4px;
+
+    margin-bottom:18px;
+
+}
+
+.hero-title{
+
+    font-size:2.65rem;
+
+    line-height:1.15;
+
+    max-width:320px;
+
+    margin:auto;
+
+}
+
+.hero-subtitle{
+
+    font-size:1.35rem;
+
+    margin-top:20px;
+
+}
+
+.scroll-indicator{
+
+    bottom:35px;
+
+    font-size:.75rem;
+
+}
+
+.scroll-indicator::after{
+
+    height:28px;
+
+}
+
+.chapter-page{
+
+    padding:45px 12px;
+
+    margin-top:-40px;
+
+}
+
+.chapter-content{
+
+    width:100%;
+
+    padding:55px 28px;
+
+    border-radius:18px;
+
+}
+
+.bookmark{
+
+    width:8px;
+
+    height:75px;
+
+    right:22px;
+
+}
+
+.chapter-date{
+
+    font-size:2rem;
+
+    margin-bottom:45px;
+
+}
+
+.story{
+
+    font-size:1.25rem;
+
+    line-height:1.9;
+
+}
+
+.story p{
+
+    margin-bottom:32px;
+
+}
+
+blockquote{
+
+    margin:45px 0;
+
+    padding:26px;
+
+    font-size:1.7rem;
+
+    line-height:1.7;
+
+}
+
+.ending{
+
+    font-size:2rem;
+
+    margin-top:70px;
+
+}
+
+.continue-btn{
+
+    font-size:1.8rem;
+
+    margin-top:70px;
+
+}
+
+.page-number{
+
+    position:relative;
+
+    right:auto;
+
+    bottom:auto;
+
+    text-align:center;
+
+    margin-top:35px;
+
+}
+
+}
+
+
+/* ==========================================
+   SMALL PHONES
+========================================== */
+
+@media (max-width:360px){
+
+.hero-title{
+
+    font-size:2.2rem;
+
+}
+
+.hero-subtitle{
+
+    font-size:1.15rem;
+
+}
+
+.chapter-content{
+
+    padding:45px 22px;
+
+}
+
+.story{
+
+    font-size:1.12rem;
+
+}
+
+blockquote{
+
+    font-size:1.45rem;
+
+    padding:22px;
+
+}
+
+.chapter-date{
+
+    font-size:1.8rem;
+
+}
+
+.continue-btn{
+
+    font-size:1.6rem;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.hero-subtitle{
+
+    margin-top:12px;
+    margin-bottom:70px;
+
+}
+
+}
