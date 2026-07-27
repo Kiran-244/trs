@@ -1,0 +1,593 @@
+/* ===========================
+   THE TEACHER WHO STAYED
+   LETTER PAGE
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Cormorant Garamond',serif;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(255,255,255,.08),
+    transparent 55%),
+
+    linear-gradient(
+    180deg,
+    #3d2f23 0%,
+    #2b2118 100%);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    color:#2d241b;
+}
+
+/*============================
+Hero
+============================*/
+
+.letter-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero-content{
+
+    max-width:900px;
+
+}
+
+.chapter-number{
+
+    letter-spacing:8px;
+
+    text-transform:uppercase;
+
+    color:#d9c5a4;
+
+    font-size:.9rem;
+
+    margin-bottom:25px;
+}
+
+.hero-content h1{
+
+    font-size:5rem;
+
+    color:white;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+}
+
+.subtitle{
+
+    color:#d7d0c7;
+
+    font-size:1.35rem;
+
+    line-height:2;
+
+    max-width:700px;
+
+    margin:auto auto 60px;
+}
+
+#openLetter{
+
+    background:#efe4d2;
+
+    color:#3d2f23;
+
+    border:none;
+
+    padding:18px 45px;
+
+    font-size:1rem;
+
+    letter-spacing:2px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-family:'Lora',serif;
+
+}
+
+#openLetter:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+/*=========================
+Letter Wrapper
+==========================*/
+
+.letter-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:100px 20px;
+
+    opacity:1;
+
+    transition:1s;
+
+}
+
+.hidden{
+
+    display:none;
+}
+
+/*=========================
+Letter Paper
+==========================*/
+
+.letter-paper{
+
+    position:relative;
+
+    width:min(900px,95%);
+
+    background:#f8f2e7;
+
+    padding:90px;
+
+    border-radius:4px;
+
+    box-shadow:
+
+    0 30px 70px rgba(0,0,0,.45),
+
+    inset 0 0 60px rgba(0,0,0,.05);
+
+}
+
+/* Paper Texture */
+
+.letter-paper::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    repeating-linear-gradient(
+
+    0deg,
+
+    rgba(0,0,0,.015),
+
+    rgba(0,0,0,.015) 2px,
+
+    transparent 2px,
+
+    transparent 6px
+
+    );
+
+    pointer-events:none;
+
+    opacity:.3;
+
+}
+
+/* Wax Seal */
+
+.wax-seal{
+
+    position:absolute;
+
+    top:-35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#872222;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:22px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+/*========================
+Letter
+=========================*/
+
+.letter-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+#letterText{
+
+    white-space:pre-wrap;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:2rem;
+
+    line-height:2.2;
+
+    color:#2b2118;
+
+}
+/*==============================
+Elegant Entrance
+==============================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.letter-paper{
+
+    animation:fadeUp 1.2s ease forwards;
+
+}
+
+
+/*==============================
+Decorative Corners
+==============================*/
+
+.letter-paper::after{
+
+    content:"❦";
+
+    position:absolute;
+
+    bottom:35px;
+    right:45px;
+
+    font-size:34px;
+
+    color:#b59b72;
+
+    opacity:.4;
+
+}
+
+
+/*==============================
+Drop Cap
+==============================*/
+
+#letterText::first-letter{
+
+    font-size:4.5rem;
+
+    float:left;
+
+    line-height:1;
+
+    margin-right:14px;
+
+    margin-top:8px;
+
+    font-family:'Allura',cursive;
+
+    color:#5a4430;
+
+}
+
+
+/*==============================
+Selection
+==============================*/
+
+::selection{
+
+    background:#dcc7a3;
+
+    color:#2d241b;
+
+}
+
+
+/*==============================
+Buttons
+==============================*/
+
+.letter-actions{
+
+    margin-top:60px;
+
+    display:flex;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.letter-actions button{
+
+    border:none;
+
+    padding:18px 42px;
+
+    cursor:pointer;
+
+    font-family:'Lora',serif;
+
+    letter-spacing:2px;
+
+    transition:.35s;
+
+    font-size:15px;
+
+}
+
+#downloadLetter{
+
+    background:#f3eadb;
+
+    color:#2d241b;
+
+}
+
+#closeBook{
+
+    background:#3d2f23;
+
+    color:white;
+
+}
+
+.letter-actions button:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+/*==============================
+Floating Paper
+==============================*/
+
+@keyframes paperFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-5px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.letter-paper{
+
+    animation:
+
+    fadeUp 1.2s ease,
+
+    paperFloat 8s ease-in-out infinite;
+
+}
+
+
+/*==============================
+Beautiful Scrollbar
+==============================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#8e6c46;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eadfcf;
+
+}
+
+
+/*==============================
+Responsive
+==============================*/
+
+@media(max-width:992px){
+
+.hero-content h1{
+
+    font-size:3.6rem;
+
+}
+
+.subtitle{
+    font-size:1.1rem;
+}
+
+.letter-paper{
+    padding:70px 45px;
+}
+
+#letterText{
+    font-size:2rem;
+    line-height:2;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+    font-size:2.8rem;
+
+}
+
+.subtitle{
+
+    font-size:1rem;
+
+}
+
+.chapter-number{
+
+    letter-spacing:5px;
+
+}
+
+.letter-paper{
+
+    padding:45px 28px;
+
+}
+
+#letterText{
+
+    font-size:2rem;
+
+    line-height:1.9;
+
+}
+
+.wax-seal{
+
+    width:58px;
+
+    height:58px;
+
+}
+
+.letter-actions{
+
+    flex-direction:column;
+
+    width:100%;
+
+}
+
+.letter-actions button{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero-content h1{
+
+    font-size:2.1rem;
+
+}
+
+.subtitle{
+
+    line-height:1.8;
+
+}
+
+.letter-paper{
+
+    padding:35px 20px;
+
+}
+
+#letterText{
+
+    font-size:2rem;
+
+}
+
+}
