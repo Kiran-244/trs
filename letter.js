@@ -275,3 +275,35 @@ downloadBtn.addEventListener("click", () => {
     document.body.removeChild(link);
 
 });
+closeBtn.addEventListener("click", () => {
+
+    document.body.animate(
+
+        [
+            {
+                opacity: 1,
+                transform: "scale(1)"
+            },
+
+            {
+                opacity: 0,
+                transform: "scale(0.97)"
+            }
+
+        ],
+
+        {
+            duration: 1000,
+            easing: "ease-in-out",
+            fill: "forwards"
+        }
+
+    );
+
+    setTimeout(() => {
+
+        window.location.href = "contents.html";
+
+    }, 950);
+
+});

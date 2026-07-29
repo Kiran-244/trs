@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Teacher Who Stayed | Contents</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+
+            font-family:'Cormorant Garamond',serif;
+            background:#f8f4ec;
+            color:#2b2b2b;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            min-height:100vh;
+
+            padding:60px 20px;
+
+        }
+
+        .book{
+
+            width:750px;
+            max-width:100%;
+
+            background:white;
+
+            padding:70px;
+
+            box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+        }
+
+        h1{
+
+            text-align:center;
+            font-size:3rem;
+            margin-bottom:15px;
+            letter-spacing:2px;
+
+        }
+
+        .subtitle{
+
+            text-align:center;
+            color:#888;
+            margin-bottom:55px;
+            font-size:1.2rem;
+
+        }
+
+        .item{
+
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-end;
+
+            margin:18px 0;
+
+            font-size:1.45rem;
+
+        }
+
+        .item a{
+
+            color:#2b2b2b;
+            text-decoration:none;
+
+            transition:.25s;
+
+        }
+
+        .item a:hover{
+
+            color:#8b5e3c;
+            padding-left:8px;
+
+        }
+
+        .dots{
+
+            flex:1;
+            border-bottom:1px dotted #999;
+            margin:0 12px 6px;
+
+        }
+
+        .footer{
+
+            text-align:center;
+            margin-top:60px;
+
+            color:#777;
+
+            font-size:1.05rem;
+
+        }
+        .close-book-btn{
+
+    margin-top:50px;
+            margin-left:170px;
+    padding:14px 34px;
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.2rem;
+    font-weight:600;
+
+    color:#5b4634;
+    background:transparent;
+
+    border:1.8px solid #5b4634;
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:all .35s ease;
+
+}
+
+.close-book-btn:hover{
+
+    background:#5b4634;
+    color:#fff;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.close-book-btn:active{
+
+    transform:scale(.97);
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="book">
+
+<h1>Contents</h1>
+
+<p class="subtitle">
+Every chapter tells a small part of one story.
+</p>
+
+<div class="item">
+<a href="index.html">Introduction</a>
+<div class="dots"></div>
+<span>i</span>
+</div>
+
+<div class="item">
+<a href="chapter1.html">Chapter I — Every Story Has an Unexpected Beginning</a>
+<div class="dots"></div>
+<span>1</span>
+</div>
+
+<div class="item">
+<a href="chapter2.html">Chapter II — The Teacher Who Walked In</a>
+<div class="dots"></div>
+<span>2</span>
+</div>
+
+<div class="item">
+<a href="chapter3.html">Chapter III — A Classroom That Felt Different</a>
+<div class="dots"></div>
+<span>3</span>
+</div>
+
+<div class="item">
+<a href="chapter4.html">Chapter IV — The Day I Discovered Something About Myself</a>
+<div class="dots"></div>
+<span>4</span>
+</div>
+
+<div class="item">
+<a href="chapter5.html">Chapter V — Lessons Beyond English</a>
+<div class="dots"></div>
+<span>5</span>
+</div>
+
+<div class="item">
+<a href="chapter6.html">Chapter VI — Questions I'll Never Forget</a>
+<div class="dots"></div>
+<span>6</span>
+</div>
+
+<div class="item">
+<a href="chapter7.html">Chapter VII — Questions, Stories, and Lessons Beyond the Syllabus</a>
+<div class="dots"></div>
+<span>7</span>
+</div>
+
+<div class="item">
+<a href="chapter8.html">Chapter VIII — The Student Within the Teacher</a>
+<div class="dots"></div>
+<span>8</span>
+</div>
+
+<div class="item">
+<a href="chapter9.html">Chapter IX — The Student Within the Teacher</a>
+<div class="dots"></div>
+<span>9</span>
+</div>
+
+<div class="item">
+<a href="letter.html">Epilogue — The Teacher Who Stayed</a>
+<div class="dots"></div>
+<span>10</span>
+</div>
+
+<p class="footer">
+
+❦
+
+<br><br>
+
+Thank you for reading.
+
+<br>
+
+Some stories are worth revisiting.
+
+</p>
+<button id="closeBook" class="close-book-btn">
+    Close Book
+</button>
+
+
+</div>
+<script>
+
+document.getElementById("closeBook").addEventListener("click",()=>{
+
+    document.body.style.transition="opacity .9s ease";
+
+    document.body.style.opacity="0";
+
+    setTimeout(()=>{
+
+        window.location.href="index.html";
+
+    },900);
+
+});
+
+</script>
+</body>
+
+</html>
