@@ -152,7 +152,276 @@
     transform:scale(.97);
 
 }
+/* ======================================================
+   TABLET
+====================================================== */
 
+@media screen and (max-width: 992px) {
+
+    body{
+        padding:40px 20px;
+    }
+
+    .book{
+        width:100%;
+        max-width:760px;
+        padding:50px 40px;
+    }
+
+    h1{
+        font-size:2.6rem;
+    }
+
+    .subtitle{
+        font-size:1.1rem;
+        margin-bottom:40px;
+    }
+
+    .item{
+        font-size:1.2rem;
+        margin:18px 0;
+    }
+
+    .footer{
+        font-size:1rem;
+    }
+
+    .close-book-btn{
+        display:block;
+        margin:45px auto 0;
+    }
+
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media screen and (max-width:768px){
+
+    body{
+
+        padding:18px;
+        align-items:flex-start;
+
+    }
+
+    .book{
+
+        width:100%;
+        padding:30px 22px;
+
+        border-radius:14px;
+
+    }
+
+    h1{
+
+        font-size:2rem;
+        letter-spacing:1px;
+
+    }
+
+    .subtitle{
+
+        font-size:.95rem;
+        margin-bottom:30px;
+        line-height:1.6;
+
+    }
+
+    .item{
+
+        display:grid;
+        grid-template-columns:auto 1fr auto;
+
+        align-items:end;
+
+        gap:8px;
+
+        margin:16px 0;
+
+        font-size:1rem;
+        line-height:1.5;
+
+    }
+
+    .item a{
+
+        display:block;
+        word-break:break-word;
+
+    }
+
+    .dots{
+
+        margin:0 6px 5px;
+
+    }
+
+    .item span{
+
+        font-size:.9rem;
+        color:#666;
+
+    }
+
+    .footer{
+
+        margin-top:40px;
+
+        font-size:.9rem;
+        line-height:1.8;
+
+    }
+
+    .close-book-btn{
+
+        width:100%;
+
+        margin:35px auto 0;
+
+        padding:14px;
+
+        font-size:1rem;
+
+    }
+
+}
+
+
+/* ======================================================
+   SMALL PHONES
+====================================================== */
+
+@media screen and (max-width:480px){
+
+    body{
+
+        padding:12px;
+
+    }
+
+    .book{
+
+        padding:22px 16px;
+
+    }
+
+    h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .subtitle{
+
+        font-size:.85rem;
+        margin-bottom:22px;
+
+    }
+
+    .item{
+
+        grid-template-columns:auto 1fr auto;
+
+        font-size:.88rem;
+
+        gap:6px;
+
+        margin:14px 0;
+
+    }
+
+    .item a{
+
+        line-height:1.45;
+
+    }
+
+    .dots{
+
+        margin:0 5px 4px;
+
+    }
+
+    .item span{
+
+        font-size:.8rem;
+
+    }
+
+    .footer{
+
+        margin-top:30px;
+
+        font-size:.8rem;
+
+        line-height:1.7;
+
+    }
+
+    .close-book-btn{
+
+        width:100%;
+
+        padding:12px;
+
+        font-size:.95rem;
+
+    }
+
+}
+
+
+/* ======================================================
+   VERY SMALL DEVICES
+====================================================== */
+
+@media screen and (max-width:360px){
+
+    .book{
+
+        padding:18px 14px;
+
+    }
+
+    h1{
+
+        font-size:1.5rem;
+
+    }
+
+    .subtitle{
+
+        font-size:.8rem;
+
+    }
+
+    .item{
+
+        font-size:.8rem;
+
+        margin:12px 0;
+
+    }
+
+    .footer{
+
+        font-size:.75rem;
+
+    }
+
+    .close-book-btn{
+
+        font-size:.9rem;
+
+        padding:11px;
+
+    }
+
+}
     </style>
 
 </head>
@@ -222,15 +491,16 @@ Every chapter tells a small part of one story.
 </div>
 
 <div class="item">
-<a href="chapter9.html">Chapter IX — The Student Within the Teacher</a>
+<a href="chapter9.html">Chapter IX — The Teacher Who Stayed</a>
 <div class="dots"></div>
 <span>9</span>
 </div>
 
+
 <div class="item">
-<a href="letter.html">Epilogue — The Teacher Who Stayed</a>
-<div class="dots"></div>
-<span>10</span>
+    <a href="letter.html">A Letter For You</a>
+    <div class="dots"></div>
+    <span>10</span>
 </div>
 
 <p class="footer">
