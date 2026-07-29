@@ -100,3 +100,8 @@ const observer = new IntersectionObserver((entries)=>{
 });
 
 reveals.forEach(item=>observer.observe(item));
+const contentBtn = document.getElementById("continueBtn-toc");
+
+contentBtn.addEventListener("click", () => {
+    window.location.href = "contents.html";
+});
