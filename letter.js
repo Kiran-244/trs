@@ -67,35 +67,41 @@ Typewriter
 
 let index = 0;
 
-function typeLetter(){
+function typeLetter() {
 
-    if(index < fullText.length){
+    if (index < fullText.length) {
 
-        pre.textContent += fullText.charAt(index);
+        const char = fullText.charAt(index);
 
+        pre.textContent += char;
         index++;
 
         window.scrollTo({
-
-            top:document.body.scrollHeight,
-
-            behavior:"smooth"
-
+            top: document.body.scrollHeight,
+            behavior: "smooth"
         });
 
-        let speed = 20 + Math.random()*18;
+        let speed = 45 + Math.random() * 20; // 45–65ms per character
 
-        if(fullText.charAt(index-1)==="\n"){
-
-            speed = 220;
-
+        if (char === " ") {
+            speed = 25;
         }
 
-        setTimeout(typeLetter,speed);
+        if (char === ",") {
+            speed = 180;
+        }
 
-    }
+        if (char === "." || char === "!" || char === "?" || char === ":") {
+            speed = 450;
+        }
 
-    else{
+        if (char === "\n") {
+            speed = 700;
+        }
+
+        setTimeout(typeLetter, speed);
+
+    } else {
 
         showButtons();
 
@@ -201,7 +207,7 @@ closeBtn.addEventListener("click",()=>{
 
         {
 
-            duration:1800,
+            duration:800,
 
             fill:"forwards"
 
@@ -253,13 +259,19 @@ closeBtn.addEventListener("click",()=>{
 
 });
 
-
 /*==========================
 Download Letter
 ==========================*/
 
-downloadBtn.addEventListener("click",()=>{
+downloadBtn.addEventListener("click", () => {
 
-    window.print();
+    const link = document.createElement("a");
+
+    link.href = "images/letter.png";   // Path to your Canva image
+    link.download = "The Teacher Who Stayed - Letter.jpg";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 
 });
