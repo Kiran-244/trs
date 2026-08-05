@@ -7,541 +7,551 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>The Teacher Who Stayed | Contents</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-411Q0BJYM8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'G-411Q0BJYM8');
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <style>
-
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        body{
+        body {
 
-            font-family:'Cormorant Garamond',serif;
-            background:#f8f4ec;
-            color:#2b2b2b;
+            font-family: 'Cormorant Garamond', serif;
+            background: #f8f4ec;
+            color: #2b2b2b;
 
-            display:flex;
-            justify-content:center;
-            align-items:center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            min-height:100vh;
+            min-height: 100vh;
 
-            padding:60px 20px;
-
-        }
-
-        .book{
-
-            width:750px;
-            max-width:100%;
-
-            background:white;
-
-            padding:70px;
-
-            box-shadow:0 20px 60px rgba(0,0,0,.08);
+            padding: 60px 20px;
 
         }
 
-        h1{
+        .book {
 
-            text-align:center;
-            font-size:3rem;
-            margin-bottom:15px;
-            letter-spacing:2px;
+            width: 750px;
+            max-width: 100%;
 
-        }
+            background: white;
 
-        .subtitle{
+            padding: 70px;
 
-            text-align:center;
-            color:#888;
-            margin-bottom:55px;
-            font-size:1.2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
 
         }
 
-        .item{
+        h1 {
 
-            display:flex;
-            justify-content:space-between;
-            align-items:flex-end;
-
-            margin:18px 0;
-
-            font-size:1.45rem;
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
 
         }
 
-        .item a{
+        .subtitle {
 
-            color:#2b2b2b;
-            text-decoration:none;
-
-            transition:.25s;
-
-        }
-
-        .item a:hover{
-
-            color:#8b5e3c;
-            padding-left:8px;
+            text-align: center;
+            color: #888;
+            margin-bottom: 55px;
+            font-size: 1.2rem;
 
         }
 
-        .dots{
+        .item {
 
-            flex:1;
-            border-bottom:1px dotted #999;
-            margin:0 12px 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            margin: 18px 0;
+
+            font-size: 1.45rem;
+
+        }
+
+        .item a {
+
+            color: #2b2b2b;
+            text-decoration: none;
+
+            transition: .25s;
 
         }
 
-        .footer{
+        .item a:hover {
 
-            text-align:center;
-            margin-top:60px;
-
-            color:#777;
-
-            font-size:1.05rem;
+            color: #8b5e3c;
+            padding-left: 8px;
 
         }
-        .close-book-btn{
 
-    margin-top:50px;
-            margin-left:170px;
-    padding:14px 34px;
+        .dots {
 
-    font-family:'Cormorant Garamond',serif;
-    font-size:1.2rem;
-    font-weight:600;
+            flex: 1;
+            border-bottom: 1px dotted #999;
+            margin: 0 12px 6px;
 
-    color:#5b4634;
-    background:transparent;
+        }
 
-    border:1.8px solid #5b4634;
-    border-radius:50px;
+        .footer {
 
-    cursor:pointer;
+            text-align: center;
+            margin-top: 60px;
 
-    transition:all .35s ease;
+            color: #777;
 
-}
+            font-size: 1.05rem;
 
-.close-book-btn:hover{
+        }
 
-    background:#5b4634;
-    color:#fff;
+        .close-book-btn {
 
-    transform:translateY(-3px);
+            margin-top: 50px;
+            margin-left: 170px;
+            padding: 14px 34px;
 
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.2rem;
+            font-weight: 600;
 
-}
+            color: #5b4634;
+            background: transparent;
 
-.close-book-btn:active{
+            border: 1.8px solid #5b4634;
+            border-radius: 50px;
 
-    transform:scale(.97);
+            cursor: pointer;
 
-}
-/* ======================================================
+            transition: all .35s ease;
+
+        }
+
+        .close-book-btn:hover {
+
+            background: #5b4634;
+            color: #fff;
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 12px 25px rgba(0, 0, 0, .15);
+
+        }
+
+        .close-book-btn:active {
+
+            transform: scale(.97);
+
+        }
+
+        /* ======================================================
    TABLET
 ====================================================== */
 
-@media screen and (max-width: 992px) {
+        @media screen and (max-width: 992px) {
 
-    body{
-        padding:40px 20px;
-    }
+            body {
+                padding: 40px 20px;
+            }
 
-    .book{
-        width:100%;
-        max-width:760px;
-        padding:50px 40px;
-    }
+            .book {
+                width: 100%;
+                max-width: 760px;
+                padding: 50px 40px;
+            }
 
-    h1{
-        font-size:2.6rem;
-    }
+            h1 {
+                font-size: 2.6rem;
+            }
 
-    .subtitle{
-        font-size:1.1rem;
-        margin-bottom:40px;
-    }
+            .subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 40px;
+            }
 
-    .item{
-        font-size:1.2rem;
-        margin:18px 0;
-    }
+            .item {
+                font-size: 1.2rem;
+                margin: 18px 0;
+            }
 
-    .footer{
-        font-size:1rem;
-    }
+            .footer {
+                font-size: 1rem;
+            }
 
-    .close-book-btn{
-        display:block;
-        margin:45px auto 0;
-    }
+            .close-book-btn {
+                display: block;
+                margin: 45px auto 0;
+            }
 
-}
+        }
 
 
-/* ======================================================
+        /* ======================================================
    MOBILE
 ====================================================== */
 
-@media screen and (max-width:768px){
+        @media screen and (max-width:768px) {
 
-    body{
+            body {
 
-        padding:18px;
-        align-items:flex-start;
+                padding: 18px;
+                align-items: flex-start;
 
-    }
+            }
 
-    .book{
+            .book {
 
-        width:100%;
-        padding:30px 22px;
+                width: 100%;
+                padding: 30px 22px;
 
-        border-radius:14px;
+                border-radius: 14px;
 
-    }
+            }
 
-    h1{
+            h1 {
 
-        font-size:2rem;
-        letter-spacing:1px;
+                font-size: 2rem;
+                letter-spacing: 1px;
 
-    }
+            }
 
-    .subtitle{
+            .subtitle {
 
-        font-size:.95rem;
-        margin-bottom:30px;
-        line-height:1.6;
+                font-size: .95rem;
+                margin-bottom: 30px;
+                line-height: 1.6;
 
-    }
+            }
 
-    .item{
+            .item {
 
-        display:grid;
-        grid-template-columns:auto 1fr auto;
+                display: grid;
+                grid-template-columns: auto 1fr auto;
 
-        align-items:end;
+                align-items: end;
 
-        gap:8px;
+                gap: 8px;
 
-        margin:16px 0;
+                margin: 16px 0;
 
-        font-size:1rem;
-        line-height:1.5;
+                font-size: 1rem;
+                line-height: 1.5;
 
-    }
+            }
 
-    .item a{
+            .item a {
 
-        display:block;
-        word-break:break-word;
+                display: block;
+                word-break: break-word;
 
-    }
+            }
 
-    .dots{
+            .dots {
 
-        margin:0 6px 5px;
+                margin: 0 6px 5px;
 
-    }
+            }
 
-    .item span{
+            .item span {
 
-        font-size:.9rem;
-        color:#666;
+                font-size: .9rem;
+                color: #666;
 
-    }
+            }
 
-    .footer{
+            .footer {
 
-        margin-top:40px;
+                margin-top: 40px;
 
-        font-size:.9rem;
-        line-height:1.8;
+                font-size: .9rem;
+                line-height: 1.8;
 
-    }
+            }
 
-    .close-book-btn{
+            .close-book-btn {
 
-        width:100%;
+                width: 100%;
 
-        margin:35px auto 0;
+                margin: 35px auto 0;
 
-        padding:14px;
+                padding: 14px;
 
-        font-size:1rem;
+                font-size: 1rem;
 
-    }
+            }
 
-}
+        }
 
 
-/* ======================================================
+        /* ======================================================
    SMALL PHONES
 ====================================================== */
 
-@media screen and (max-width:480px){
+        @media screen and (max-width:480px) {
 
-    body{
+            body {
 
-        padding:12px;
+                padding: 12px;
 
-    }
+            }
 
-    .book{
+            .book {
 
-        padding:22px 16px;
+                padding: 22px 16px;
 
-    }
+            }
 
-    h1{
+            h1 {
 
-        font-size:1.7rem;
+                font-size: 1.7rem;
 
-    }
+            }
 
-    .subtitle{
+            .subtitle {
 
-        font-size:.85rem;
-        margin-bottom:22px;
+                font-size: .85rem;
+                margin-bottom: 22px;
 
-    }
+            }
 
-    .item{
+            .item {
 
-        grid-template-columns:auto 1fr auto;
+                grid-template-columns: auto 1fr auto;
 
-        font-size:.88rem;
+                font-size: .88rem;
 
-        gap:6px;
+                gap: 6px;
 
-        margin:14px 0;
+                margin: 14px 0;
 
-    }
+            }
 
-    .item a{
+            .item a {
 
-        line-height:1.45;
+                line-height: 1.45;
 
-    }
+            }
 
-    .dots{
+            .dots {
 
-        margin:0 5px 4px;
+                margin: 0 5px 4px;
 
-    }
+            }
 
-    .item span{
+            .item span {
 
-        font-size:.8rem;
+                font-size: .8rem;
 
-    }
+            }
 
-    .footer{
+            .footer {
 
-        margin-top:30px;
+                margin-top: 30px;
 
-        font-size:.8rem;
+                font-size: .8rem;
 
-        line-height:1.7;
+                line-height: 1.7;
 
-    }
+            }
 
-    .close-book-btn{
+            .close-book-btn {
 
-        width:100%;
+                width: 100%;
 
-        padding:12px;
+                padding: 12px;
 
-        font-size:.95rem;
+                font-size: .95rem;
 
-    }
+            }
 
-}
+        }
 
 
-/* ======================================================
+        /* ======================================================
    VERY SMALL DEVICES
 ====================================================== */
 
-@media screen and (max-width:360px){
+        @media screen and (max-width:360px) {
 
-    .book{
+            .book {
 
-        padding:18px 14px;
+                padding: 18px 14px;
 
-    }
+            }
 
-    h1{
+            h1 {
 
-        font-size:1.5rem;
+                font-size: 1.5rem;
 
-    }
+            }
 
-    .subtitle{
+            .subtitle {
 
-        font-size:.8rem;
+                font-size: .8rem;
 
-    }
+            }
 
-    .item{
+            .item {
 
-        font-size:.8rem;
+                font-size: .8rem;
 
-        margin:12px 0;
+                margin: 12px 0;
 
-    }
+            }
 
-    .footer{
+            .footer {
 
-        font-size:.75rem;
+                font-size: .75rem;
 
-    }
+            }
 
-    .close-book-btn{
+            .close-book-btn {
 
-        font-size:.9rem;
+                font-size: .9rem;
 
-        padding:11px;
+                padding: 11px;
 
-    }
+            }
 
-}
+        }
     </style>
 
 </head>
 
 <body>
 
-<div class="book">
+    <div class="book">
 
-<h1>Contents</h1>
+        <h1>Contents</h1>
 
-<p class="subtitle">
-Every chapter tells a small part of one story.
-</p>
+        <p class="subtitle">
+            Every chapter tells a small part of one story.
+        </p>
 
-<div class="item">
-<a href="index.html">Introduction</a>
-<div class="dots"></div>
-<span>i</span>
-</div>
+        <div class="item">
+            <a href="index.html">Introduction</a>
+            <div class="dots"></div>
+            <span>i</span>
+        </div>
 
-<div class="item">
-<a href="chapter1.html">Chapter I — Every Story Has an Unexpected Beginning</a>
-<div class="dots"></div>
-<span>1</span>
-</div>
+        <div class="item">
+            <a href="chapter1.html">Chapter I — Every Story Has an Unexpected Beginning</a>
+            <div class="dots"></div>
+            <span>1</span>
+        </div>
 
-<div class="item">
-<a href="chapter2.html">Chapter II — The Teacher Who Walked In</a>
-<div class="dots"></div>
-<span>2</span>
-</div>
+        <div class="item">
+            <a href="chapter2.html">Chapter II — The Teacher Who Walked In</a>
+            <div class="dots"></div>
+            <span>2</span>
+        </div>
 
-<div class="item">
-<a href="chapter3.html">Chapter III — A Classroom That Felt Different</a>
-<div class="dots"></div>
-<span>3</span>
-</div>
+        <div class="item">
+            <a href="chapter3.html">Chapter III — A Classroom That Felt Different</a>
+            <div class="dots"></div>
+            <span>3</span>
+        </div>
 
-<div class="item">
-<a href="chapter4.html">Chapter IV — The Day I Discovered Something About Myself</a>
-<div class="dots"></div>
-<span>4</span>
-</div>
+        <div class="item">
+            <a href="chapter4.html">Chapter IV — The Day I Discovered Something About Myself</a>
+            <div class="dots"></div>
+            <span>4</span>
+        </div>
 
-<div class="item">
-<a href="chapter5.html">Chapter V — Lessons Beyond English</a>
-<div class="dots"></div>
-<span>5</span>
-</div>
+        <div class="item">
+            <a href="chapter5.html">Chapter V — Lessons Beyond English</a>
+            <div class="dots"></div>
+            <span>5</span>
+        </div>
 
-<div class="item">
-<a href="chapter6.html">Chapter VI — Questions I'll Never Forget</a>
-<div class="dots"></div>
-<span>6</span>
-</div>
+        <div class="item">
+            <a href="chapter6.html">Chapter VI — Questions I'll Never Forget</a>
+            <div class="dots"></div>
+            <span>6</span>
+        </div>
 
-<div class="item">
-<a href="chapter7.html">Chapter VII — Questions, Stories, and Lessons Beyond the Syllabus</a>
-<div class="dots"></div>
-<span>7</span>
-</div>
+        <div class="item">
+            <a href="chapter7.html">Chapter VII — Questions, Stories, and Lessons Beyond the Syllabus</a>
+            <div class="dots"></div>
+            <span>7</span>
+        </div>
 
-<div class="item">
-<a href="chapter8.html">Chapter VIII — The Student Within the Teacher</a>
-<div class="dots"></div>
-<span>8</span>
-</div>
+        <div class="item">
+            <a href="chapter8.html">Chapter VIII — The Student Within the Teacher</a>
+            <div class="dots"></div>
+            <span>8</span>
+        </div>
 
-<div class="item">
-<a href="chapter9.html">Chapter IX — The Teacher Who Stayed</a>
-<div class="dots"></div>
-<span>9</span>
-</div>
+        <div class="item">
+            <a href="chapter9.html">Chapter IX — The Teacher Who Stayed</a>
+            <div class="dots"></div>
+            <span>9</span>
+        </div>
 
-<div class="item">
-<a href="chapter10.html">Chapter X — One Last Thing</a>
-<div class="dots"></div>
-<span>10</span>
-</div>
+        <div class="item">
+            <a href="chapter10.html">Chapter X — One Last Thing</a>
+            <div class="dots"></div>
+            <span>10</span>
+        </div>
 
-<div class="item">
-    <a href="letter.html">A Letter For You</a>
-    <div class="dots"></div>
-    <span>11</span>
-</div>
+        <div class="item">
+            <a href="letter.html">A Letter For You</a>
+            <div class="dots"></div>
+            <span>11</span>
+        </div>
 
-<p class="footer">
+        <p class="footer">
 
-❦
+            ❦
 
-<br><br>
+            <br><br>
 
-Thank you for reading.
+            Thank you for reading.
 
-<br>
+            <br>
 
-Some stories are worth revisiting.
+            Some stories are worth revisiting.
 
-</p>
-<button id="closeBook" class="close-book-btn">
-    Close Book
-</button>
-</div>
-<script>
+        </p>
+        <button id="closeBook" class="close-book-btn">
+            Close Book
+        </button>
+    </div>
+    <script>
 
-document.getElementById("closeBook").addEventListener("click",()=>{
+        document.getElementById("closeBook").addEventListener("click", () => {
 
-    document.body.style.transition="opacity .9s ease";
+            document.body.style.transition = "opacity .9s ease";
 
-    document.body.style.opacity="0";
+            document.body.style.opacity = "0";
 
-    setTimeout(()=>{
+            setTimeout(() => {
 
-        window.location.href="index.html";
+                window.location.href = "index.html";
 
-    },900);
+            }, 900);
 
-});
+        });
 
-</script>
+    </script>
 </body>
 
 </html>
